@@ -50,8 +50,8 @@ export const stylezoneDemo = {
   appUrl: "https://stylezone-pk.vercel.app",
   password: "Test@1234",
   accounts: [
-    { role: "Client", email: "alijavedmember@gmail.com" },
-    { role: "Provider", email: "alijavedprovider@gmail.com" },
+    { role: "Client", email: "abdullahmember@gmail.com" },
+    { role: "Provider", email: "abdullahprovider@gmail.com" },
   ],
 };
 

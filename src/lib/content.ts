@@ -10,7 +10,7 @@ export const profile = {
   github: "https://github.com/AlphaAbdullah7",
   linkedin: "https://www.linkedin.com/in/muhammad-abdullah-8b8898281",
   resume: "/Muhammad-Abdullah-Resume.pdf",
-  lede: "Software engineer at Insight Corporation. I build fast, reliable products end to end — React and React Native interfaces, and the Spring Boot and Node.js services behind them.",
+  lede: "Software engineer at Insight Technology. I build fast, reliable products end to end — React and React Native interfaces, and the Spring Boot and Node.js services behind them.",
   summary:
     "Full-stack software engineer working across React, React Native, Next.js, Spring Boot, Node.js and MongoDB — from interface to API to database.",
 };
@@ -88,24 +88,25 @@ export type Role = {
 
 export const experience: Role[] = [
   {
-    org: "Insight Corporation",
-    title: "Software Engineer",
+    org: "Insight Technology",
+    title: "Software Engineer (Full Stack)",
     period: "Jan 2025 – Present",
-    stack: ["React", "React Native", "Spring Boot", "Node.js", "Hapi.js", "MongoDB", "FHIR", "Elasticsearch"],
+    stack: ["React", "React Native", "Electron", "Nest.js", "Node.js", "Spring Boot", "PostgreSQL", "MongoDB", "AWS", "LangGraph", "FHIR", "Elasticsearch", "Firebase"],
     points: [
-      "Build scalable full-stack applications with React and React Native front ends and Java (Spring Boot) and Node.js services over MongoDB.",
-      "Built the Confidant Health web platform for virtual sessions between members and doctors, with a focus on a smooth user experience and reliable performance.",
-      "Lead feature development across frontend and backend — advanced state management, clean styling, and scalable, maintainable code.",
+      "Insight Finance — single-handedly architected and shipped a multi-tenant, in-house finance platform from PostgreSQL schema to Nest.js APIs and React UI, and set up its full AWS infrastructure (EC2, ECR, S3, SES, IAM, Secrets Manager) with containers and CI/CD.",
+      "Internal Desktop Platform — built features for a cross-platform Electron app integrated with enterprise backends via REST, and worked on its LangGraph AI assistant that carries out multi-step tasks from natural-language requests.",
+      "Confidant Health (US) — full-stack engineer on a live telehealth platform serving thousands of users, delivering features across the React web app, React Native mobile app and Node.js/Java backend, plus LangGraph-powered AI features and the Storybook upgrade.",
+      "Selfie (US) — built features for a longitudinal patient record product on FHIR-standard health data, with Elasticsearch-powered search across patient records.",
+      "Billfie — designed and built an income and expense tracker end to end on Firebase, with AI receipt scanning, groups and notifications.",
     ],
   },
   {
-    org: "Mehdi Technologies Pvt Ltd",
-    title: "Jr. Web Developer",
-    period: "May 2024 – Dec 2024",
-    stack: ["React", "Next.js", "Node.js", "Express", "MongoDB", "PostgreSQL"],
+    org: "Code Experts Ltd",
+    title: "Front End Developer Intern",
+    period: "Sep 2023 – Apr 2024",
+    stack: ["React", "Next.js", "Material UI", "Tailwind CSS", "Redux Toolkit", "RTK Query"],
     points: [
-      "Built scalable full-stack web applications with React and Next.js front ends and Node.js (Express) services over MongoDB and PostgreSQL.",
-      "Led feature development integrating React and Next.js with advanced state management and styling, delivering high-quality, maintainable products.",
+      "Built responsive React.js and Next.js interfaces with Material UI, Tailwind CSS, Redux Toolkit and RTK Query.",
     ],
   },
 ];

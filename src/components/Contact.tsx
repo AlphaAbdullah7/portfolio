@@ -1,24 +1,11 @@
 "use client";
 
-import { ArrowUpRight, Check, Copy, FileText, Mail } from "lucide-react";
-import { useState } from "react";
-import { copyEmail, openEmail, profile } from "@/lib/content";
+import { ArrowUpRight, FileText, Mail } from "lucide-react";
+import { openEmail, profile } from "@/lib/content";
 import { GithubIcon, LinkedinIcon } from "./brand-icons";
 import Reveal from "./Reveal";
 
 export default function Contact() {
-  const [copied, setCopied] = useState(false);
-
-  const copy = async () => {
-    try {
-      await copyEmail();
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      openEmail();
-    }
-  };
-
   return (
     <section id="contact" className="mx-auto max-w-6xl px-6 pb-16">
       <Reveal>
@@ -41,14 +28,6 @@ export default function Contact() {
               className="inline-flex h-12 items-center gap-2 rounded-xl bg-text px-6 font-medium text-bg shadow-[0_8px_30px_-6px_rgb(139_141_255/0.6)] transition-transform hover:-translate-y-0.5"
             >
               <Mail className="size-4" /> Send me an email
-            </button>
-            <button
-              type="button"
-              onClick={copy}
-              className="inline-flex h-12 items-center gap-2 rounded-xl border border-line-2 bg-white/[0.03] px-5 font-medium text-muted transition-colors hover:text-text"
-            >
-              {copied ? <Check className="size-4 text-emerald-400" /> : <Copy className="size-4" />}
-              <span aria-live="polite">{copied ? "Copied to clipboard" : "Copy email"}</span>
             </button>
           </div>
 

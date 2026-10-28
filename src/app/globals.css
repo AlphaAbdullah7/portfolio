@@ -66,6 +66,17 @@ body {
   }
 }
 
+/* Tailwind v4 resets buttons to cursor: default; restore the pointer on everything clickable */
+a[href],
+button:not(:disabled),
+[role="button"],
+[role="option"],
+summary,
+label[for],
+select {
+  cursor: pointer;
+}
+
 ::selection {
   background: rgb(139 141 255 / 0.35);
 }
